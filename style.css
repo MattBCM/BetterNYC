@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008BA0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.2);
+}
+li{
+    float: left;
+    padding: 10px 15px;
+    filter: drop-shadow(0px, 5px, 3px, black);
+}
+li a{
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: 'MuseoModerno', Helvetica, sans-serif;
+    font-size: 20px;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+li a:hover{
+    text-decoration: underline;
+    color: #F4FC30;
+}
+
+#login a{
+    border: white solid 2px;
+    background-color: #008BA0;
+    transition: ease-in 0.2s;
+}
+#login a:hover{
+    background-color: #006777;
+}
+#signup a{
+    background-color: #F4FC30;
+    color: black;
+    border: black solid 2px;
+    transition: ease-in 0.2s;
+}
+#signup a:hover, button{
+    background-color: #c0c521;
+    text-decoration: none;
+}
+#navlogo{
+    cursor: pointer;
+    width: 50px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #008BA0;
+}
+.left, .right{
+    width: 50%;
+}
+.left{
+    text-align: center;
+}
+.left h1, p{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'MuseoModerno',Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.right{
+    background-image: url("images/city.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    transition: ease-in 1s;
+}
+.noBlur{
+    filter: blur(0px);
+}
+button{
+    cursor: pointer;
+    position: relative;
+    top: 45%;
+    font-family: 'MuseoModerno', Helvetica, sans-serif;
+    background-color: #F4FC30;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: black, solid, 2px;
+}
+.left h1{
+    font-size: 45px;
+}
+.right{
+    background-color: crimson;
+    float: right;
+}
+
+.panel{
+    top:15%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    font-family: 'MuseoModerno',Helvetica, sans-serif;
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    } 
+}
