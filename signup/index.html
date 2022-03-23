@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>Sign Up</title>
 </head>
 <body onload="unBlur()">
     <ul>
         <li><img src="../images/logo.png" id="navlogo" onclick="backHome()"></li>
         <li><a href="../#about">About</a></li>
         <li><a href="../FAQ/">FAQ</a></li>
-        <li style="float: right;" id="login"><a>Login</a></li>
-        <li style="float: right;" id="signup"><a href="../signup/">Sign Up</a></li>
+        <li style="float: right;" id="login"><a href="../login/">Login</a></li>
+        <li style="float: right;" id="signup"><a>Sign Up</a></li>
     </ul>
 <div class="overall">
     <div class="left"></div>
     <div class="right">
     <div class="container">
-        <h1 class="title">Please Login</h1>
+        <h1 class="title">Sign Up</h1>
         <form method="post" action="welcome.php">
             <div class="form-control">
-                <input type="email" id="email" name="email" required>
+                <input type="text"  name="name" required>
+                <label>Full Name</label>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email" name ="email" required>
                 <label>Email</label>
             </div>
             <div class="form-control">
                 <input type="password" id="password" name ="password" required>
                 <label>Password</label>
             </div>
-
             <button class="btn" type="submit">Login</button>
         </form>
     </div>

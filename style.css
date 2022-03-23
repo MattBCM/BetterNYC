@@ -28,6 +28,7 @@ li a{
     padding: 10px 20px;
     display: block;
     text-align: center;
+    text-decoration: none;
     color: white;
     font-family: 'Muli', Helvetica, sans-serif;
     font-size: 20px;
@@ -55,7 +56,6 @@ li a:hover{
 }
 #signup a:hover, button{
     background-color: #c0c521;
-    text-decoration: none;
 }
 #navlogo{
     cursor: pointer;
@@ -144,6 +144,41 @@ button{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
     background-color: rgba(0, 0, 0, 0.5);
+}
+#form{
+    flex-direction: column;
+    text-align: center;
+}
+#form h1{
+    position: relative;
+    top: 10%;
+    font-family: 'Muli', Helvetica, sans-serif;
+    color: #ffffff;
+}
+form{
+    position: relative;
+    top:40%;
+}
+#form-container{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 0;
+}
+#form div label{
+    font-family: 'Muli' , Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+#formSubmit{
+    background-color: #F4FC30;
+    color: black;
+    border: black solid 2px;
+    transition: ease-in 0.2s;
+    font-family: 'Muli', Helvetica, sans-serif;
+    padding: 10px 20px;
 }
 
 @media (max-width: 480px){

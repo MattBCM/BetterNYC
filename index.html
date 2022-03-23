@@ -13,8 +13,8 @@
         <li><img src="images/logo.png" id="navlogo" onclick="backHome()"></li>
         <li><a href="#about">About</a></li>
         <li><a href="FAQ/">FAQ</a></li>
-        <li style="float: right;" id="login"><a>Login</a></li>
-        <li style="float: right;" id="signup"><a>Sign Up</a></li>
+        <li style="float: right;" id="login"><a href="login/">Login</a></li>
+        <li style="float: right;" id="signup"><a href="signup/">Sign Up</a></li>
     </ul>
     <div class="container">
         <div class="left">
@@ -43,6 +43,35 @@
         <div class="panel" style="background-image: url('https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_720,q_75,w_1400/v1/clients/newyorkcity/Skyline_Manhattan_Bridge_Brooklyn_Manhattan_NYC_Julienne_Schaer_022_007885f9-2552-464f-9c78-12b4082b71c2.jpg');">
             <h3>We can make a difference for all</h3>
         </div>
+    </div>
+    <div class="container" id="form">
+        <h1>Want to sign up to our newsletter?<br>Sign up here:</h1>
+        <form action="" method="post" id="form-container">
+            <div>
+            <p>Email:</p>
+            <input type="email" name="email">
+            </div>
+            <div>
+            <p>Current income:</p>
+            <input type="radio" name="money">
+            <label> < 10000</label>
+            <input type="radio" name="money">
+            <label> ~50000</label>
+            <input type="radio" name="money">
+            <label> > 100000</label>
+            </div>
+            <div>
+                <p>Type of Newsletter</p>
+                <input type="checkbox" name="news">
+                <label>Data-Focused</label>
+                <input type="checkbox" name="news">
+                <label>Community Service</label>
+                <input type="checkbox" name="news">
+                <label>Words on the Street</label>
+            </div>
+            <br>
+            <input type="button" id="formSubmit" onclick="shout()" text="Input" value="Submit">
+        </form>
     </div>
 </body>
 <script src="script.js"></script>

@@ -31,6 +31,7 @@ li a{
     text-align: center;
     color: white;
     font-size: 20px;
+    text-decoration: none;
     transition: ease-in 0.2s;
     cursor: pointer;
 }
@@ -55,7 +56,6 @@ li a:hover{
 }
 #signup a:hover{
     background-color: #c0c521;
-    text-decoration: none;
 }
 #navlogo{
     cursor: pointer;

@@ -22,3 +22,6 @@ function removeActiveClasses(){
 function backHome(){
     window.location.href="index.html";
 }
+function shout(){
+    window.alert("Thanks for submitting info!");
+}
