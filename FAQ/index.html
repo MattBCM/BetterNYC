@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <ul>
+        <li><img src="../images/logo.png" id="navlogo" onclick="backHome()"></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="index.html">FAQ</a></li>
+        <li style="float: right;" id="login"><a>Login</a></li>
+        <li style="float: right;" id="signup"><a>Sign Up</a></li>
+    </ul>
+
+    <h1>Frequently Asked Questions</h1>
+    <div class="container">
+        <div class="faq active">
+            <h3 class="faq-title">
+                What even is BetterNYC?
+            </h3>
+            <p class="faq-text">
+                We are a community-funded program that strives to lower the poverty rate by rewarding people who serve their community and are not in debt of any kind.
+            </p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                What are the benefits for signing up?
+            </h3>
+            <p class="faq-text">
+                Those who are members and meet the requirements will be able to get exclusive discounts to participating stores and renters who participates will get a small percentate of commission back.
+            </p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                Are there any specific data to show this? 
+            </h3>
+            <p class="faq-text">
+               <img src="../images/stats.png" id="stat">
+            </p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                Does being a long time member benefit you more?
+            </h3>
+            <p class="faq-text">
+                Yes! here is the table to show the difference: <br>
+                <table class="faq-text">
+                    <th>6 Months or 100 HRS</th>
+                    <th>1 Year or 200 HRS</th>
+                    <th>5 Years or 500 HRS</th>
+                    <tr>
+                        <td>2% discount in stores</td>
+                        <td>3% discount in stores</td>
+                        <td>5% discount in stores</td>
+                    </tr>
+                    <tr>
+                        <td>Landlords get 0.1% of total amount</td>
+                        <td>Landlords get 0.2% of total amount</td>
+                        <td>Landlords get 0.5% of total amount</td>
+                    </tr>
+                </table>
+            </p>
+            <button class="faq-toggle">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
