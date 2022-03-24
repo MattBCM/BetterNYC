@@ -25,3 +25,6 @@ function backHome(){
 function shout(){
     window.alert("Thanks for submitting info!");
 }
+function toSignUp(){
+    window.location.href="signup/";
+}
